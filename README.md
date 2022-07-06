@@ -12,7 +12,7 @@ Idea
 ====
 
 Two main ideas:
-* in your code (especially dashboard-like enterprise app) one might often need to "copy" one concept to another (and future make little changes to the copy). E.g. you might want to copy something called `Property Sale` to something else called `Sales Order`
+* in a project code (especially of something like dashboard-like enterprise app) one might often need to "copy" one concept to another (and future make little changes to the copy). E.g. you might want to copy something called `Property Sale` to something else called `Sales Order`
 * one name, being used in variable/function/class names/configs etc has multiple spellings in different places of the code (and that spelling should be preserved on copy)
 
 If we put two ideas together this might result into following "replace map":
@@ -40,8 +40,6 @@ If we put two ideas together this might result into following "replace map":
     "property_Sale": "sales_Order"
 }
 ```
-
-E.g. if you have something called "Property Sale", and want to completely copy all the "Property Sale" functionality into another module/model/entity/set of pages etc called "Sales Order", you will likely make the following copyings and replacements in your source code:
 
 
 Installation
@@ -104,7 +102,7 @@ Print out contents of files (non-Python, e.g. JS, HTML etc), which differ when a
 2. `file-ren`
 Make replacements inside of files accroding to replace map in-place
 3. `file-copy`
-Find files that have the pattern inside of it (e.g. `property-sale-data.js`) copy it, applying replace map to filename and contents (resulting file will be called `sales-order-data.js`)
+Find files that have the pattern inside of it (e.g. `property-sale-data.js`) and copy it, applying replace map to filename and contents (resulting file will be called `sales-order-data.js`)
 
 Hints
 =====
